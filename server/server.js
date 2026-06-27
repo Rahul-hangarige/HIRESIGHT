@@ -1,14 +1,4 @@
-import dotenv from 'dotenv';
-import connectDB from './config/db.js';
 import app from './app.js';
-
-// Load environment configurations
-dotenv.config({ override: true });
-
-console.log(`[Database Configuration] Connecting to URI: ${process.env.MONGODB_URI}`);
-
-// Establish Database Connection
-connectDB();
 
 const PORT = process.env.PORT || 5000;
 
